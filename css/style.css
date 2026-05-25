@@ -1,0 +1,231 @@
+
+header {
+    background-color: #0b0b0f;     
+    position: fixed;               
+    top: 0;
+    left: 0;
+    width: 100%;                   
+    display: flex;                 
+    justify-content: space-between;
+    align-items: center;          
+    padding: 15px 40px;            
+    box-sizing: border-box;
+    border-bottom: 1px solid #2e1a47; 
+    z-index: 1000;                 
+    font-family: sans-serif;
+}
+
+
+header span, header {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+header nav ul {
+    list-style: none;              
+    margin: 0;
+    padding: 0;
+    display: flex;                 
+    gap: 25px;                   
+    align-items: center;
+}
+
+
+header nav ul li a {
+    color: #cbd5e1;                
+    text-decoration: none;         
+    font-size: 0.95rem;
+ 
+}
+
+header nav ul li a:hover {
+    color: #bc6fff;               
+}
+
+
+        .eslogan {
+            background: linear-gradient(135deg, #7a1fae 0%, #c86ef5 100%);
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+        }
+
+        .eslogan h1 {
+            font-size: 2.8rem;
+            margin-bottom: 16px;
+            font-weight: 800;
+        }
+
+        .eslogan p {
+            font-size: 1.15rem;
+            margin-bottom: 36px;
+            opacity: 0.92;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;       
+ }
+
+        .buscador {
+            display: flex;
+            gap: 10px;
+            max-width: 560px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            padding: 8px 8px 8px 18px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+        }
+
+        .buscador input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            font-family: inherit;
+            color: #333;
+        }
+
+        .buscador button {
+            background: var(--morado);
+            color: black;
+            border: none;
+            padding: 10px 22px;
+            border-radius: 7px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+          
+        }
+
+        .buscador button:hover {
+            background: var(--morado-oscuro);
+        }
+
+        
+        .caracteristicas {
+            padding: 60px 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .tarjeta {
+            background: white;
+            border-radius: 10px;
+            padding: 30px 24px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+       
+        }
+
+        .tarjeta .icono {
+            font-size: 2.5rem;
+            margin-bottom: 14px;
+        }
+
+        .tarjeta h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            
+        }
+
+        .tarjeta p {
+            font-size: 0.92rem;
+            color: grey;
+        }
+
+        
+        .centros-seccion {
+            background: var(--gris-claro);
+            padding: 60px 40px;
+        }
+
+        .centros-seccion .caja {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .grid-centros {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .tarjetas {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+            
+        }
+
+        .tarjetas:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 4px 
+        }
+
+        .tarjetas .imagen-centro {
+            height: 160px;
+            background: linear-gradient(135deg, #c86ef5, #9b30d9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        .tarjetas .info {
+            padding: 18px;
+        }
+
+        .tarjetas .info h3 {
+            font-size: 1.05rem;
+            margin-bottom: 4px;
+        }
+
+        .tarjetas.info .ubicacion {
+            font-size: 0.85rem;
+            color: var(--gris-medio);
+            margin-bottom: 8px;
+        }
+
+        .tarjetas .info .precio-desde {
+            font-size: 0.88rem;
+            color: var(--morado);
+            font-weight: 600;
+        }
+
+        .tarjetas .info .acciones {
+            margin-top: 14px;
+            display: flex;
+            gap: 8px;
+        }
+	 .vercentros {
+	     text-align:center;
+             margin-top:32px;
+	}
+
+        .final {
+            background: var(--gris-oscuro);
+            color: black;
+            text-align: center;
+            padding: 60px 40px;
+        }
+
+        .final h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .final p {
+            color: #aaa;
+           
+        }
+
+	

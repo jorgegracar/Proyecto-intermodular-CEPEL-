@@ -1,0 +1,114 @@
+header {
+    background-color: #0b0b0f;     
+    position: fixed;               
+    top: 0;
+    left: 0;
+    width: 100%;                   
+    display: flex;                 
+    justify-content: space-between;
+    align-items: center;          
+    padding: 15px 40px;            
+    box-sizing: border-box;
+    border-bottom: 1px solid #2e1a47; 
+    z-index: 1000;                 
+    font-family: sans-serif;
+}
+
+
+header span, header {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+header nav ul {
+    list-style: none;              
+    margin: 0;
+    padding: 0;
+    display: flex;                 
+    gap: 25px;                   
+    align-items: center;
+}
+
+
+header nav ul li a {
+    color: #cbd5e1;                
+    text-decoration: none;         
+    font-size: 0.95rem;
+ 
+}
+
+header nav ul li a:hover {
+    color: #bc6fff;               
+}
+
+
+.pagina-auth {
+            min-height: calc(100vh - 65px);
+            background: linear-gradient(135deg, #f0e6ff 0%, #fafafa 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .caja-auth {
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 8px 40px rgba(155, 48, 217, 0.15);
+            width: 100%;
+            max-width: 480px;
+            overflow: hidden;
+
+        }
+
+        .formulario-auth {
+            padding: 32px;
+        }
+
+        .formulario-auth h2 {
+            font-size: 1.4rem;
+            color: var(--gris-oscuro);
+            margin-bottom: 6px;
+        }
+
+        .formulario-auth .subtitulo {
+            font-size: 0.88rem;
+            margin-bottom: 24px;
+        }
+ 
+
+        .btn-full {
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 8px;
+        }
+
+        .enlace-pie {
+            text-align: center;
+            margin-top: 18px;
+            font-size: 0.87rem;
+        }
+
+        .enlace-pie a {
+            font-weight: 600;
+        }
+
+      
+        .registro-empresa {
+            background: #faf4ff;
+            border-radius: 10px;
+            padding: 18px;
+            margin-top: 24px;
+            border: 1.5px;
+            text-align: center;
+        }
+
+        .registro-empresa p {
+            font-size: 0.88rem;
+            margin-bottom: 12px;
+        }
+
+  

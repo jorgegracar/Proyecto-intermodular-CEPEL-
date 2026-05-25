@@ -1,0 +1,233 @@
+header {
+    background-color: #0b0b0f;     
+    position: fixed;               
+    top: 0;
+    left: 0;
+    width: 100%;                   
+    display: flex;                 
+    justify-content: space-between;
+    align-items: center;          
+    padding: 15px 40px;            
+    box-sizing: border-box;
+    border-bottom: 1px solid #2e1a47; 
+    z-index: 1000;                 
+    font-family: sans-serif;
+}
+
+
+header span, header {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+header nav ul {
+    list-style: none;              
+    margin: 0;
+    padding: 0;
+    display: flex;                 
+    gap: 25px;                   
+    align-items: center;
+}
+
+
+header nav ul li a {
+    color: #cbd5e1;                
+    text-decoration: none;         
+    font-size: 0.95rem;
+ 
+}
+
+header nav ul li a:hover {
+    color: #bc6fff;               
+}
+
+
+ .cabecera-centro {
+            background: linear-gradient(135deg, #7a1fae, #c86ef5);
+            color: white;
+            padding: 40px;
+        }
+
+        .cabecera-centro .inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            gap: 28px;
+            align-items: center;
+        }
+
+        .foto-perfil {
+            width: 110px;
+            height: 110px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            flex-shrink: 0;
+            border: 3px solid rgba(255,255,255,0.5);
+        }
+
+        .info-cabecera h1 {
+            font-size: 2rem;
+            margin-bottom: 6px;
+        }
+
+        .info-cabecera .meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* CONTENIDO PRINCIPAL */
+        .contenido-detalle {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 36px 20px;
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 28px;
+        }
+
+        .columna-principal section {
+            background: white;
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+        }
+
+        .columna-principal section h2 {
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0e6ff;
+        }
+
+      
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .galeria .foto {
+            height: 100px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+	    background-color:#7a1fae;
+        }
+
+
+     	 .galeria .foto img {
+  	     width: 100%;           
+   	     height: 100%;         
+   	     object-fit: cover;    
+   	     border-radius: 8px;    
+}
+
+        .tabla-servicios tfoot td {
+            font-weight: 600;
+            background: #faf4ff;
+        }
+
+       
+        .horariotabla {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .horario {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.88rem;
+            padding: 6px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .horario .dia { font-weight: 600; 
+   }
+
+   
+        .resena {
+            padding: 14px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+
+
+        .resena .autor {
+            font-weight: 600;
+            font-size: 0.92rem;
+            margin-bottom: 4px;
+        }
+
+        .resena .fecha {
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        .resena p {
+            font-size: 0.88rem;
+            color: var(--gris-medio);
+            margin-top: 6px;
+        }
+
+        
+        .panelreserva {
+            position: sticky;
+            top: 80px;
+            height: fit-content;
+        }
+
+        .cajareserva {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(155,48,217,0.15);
+            padding: 24px;
+            border-top: 4px;
+        }
+
+        .cajareserva h3 {
+            font-size: 1.1rem;
+            margin-bottom: 18px;
+        }
+
+        .info-contacto {
+            background: white;
+            border-radius: 10px;
+            padding: 18px;
+            margin-top: 16px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+        }
+
+        .info-contacto .linea {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            font-size: 0.88rem;
+            margin-bottom: 10px;
+        }
+
+        .info-contacto .linea .icono {
+            flex-shrink: 0;
+            font-size: 1rem;
+        }
+	 .panelreserva p {
+		font-size:0.78rem;
+		color:#aaa;
+		text-align:center;
+		margin-top:10px;
+	}
+
+    

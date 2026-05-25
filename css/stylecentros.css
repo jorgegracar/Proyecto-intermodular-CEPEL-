@@ -1,0 +1,223 @@
+header {
+    background-color: #0b0b0f;     
+    position: fixed;               
+    top: 0;
+    left: 0;
+    width: 100%;                   
+    display: flex;                 
+    justify-content: space-between;
+    align-items: center;          
+    padding: 15px 40px;            
+    box-sizing: border-box;
+    border-bottom: 1px solid #2e1a47; 
+    z-index: 1000;                 
+    font-family: sans-serif;
+}
+
+
+header span, header {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+header nav ul {
+    list-style: none;              
+    margin: 0;
+    padding: 0;
+    display: flex;                 
+    gap: 25px;                   
+    align-items: center;
+}
+
+
+header nav ul li a {
+    color: #cbd5e1;                
+    text-decoration: none;         
+    font-size: 0.95rem;
+ 
+}
+
+header nav ul li a:hover {
+    color: #bc6fff;               
+}
+
+.contenedor-resultados {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            gap: 28px;
+        }
+
+      
+        .filtros {
+            width: 240px;
+            flex-shrink: 0;
+        }
+
+        .filtros h3 {
+            font-size: 1rem;
+            margin-bottom: 16px;
+            border-bottom: 2px solid 
+            padding-bottom: 8px;
+        }
+
+        .grupo {
+            margin-bottom: 22px;
+        }
+
+        .grupo label {
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 10px;
+      }
+
+        .grupo select {
+            padding: 8px 10px;
+            border: 1.5px solid #ddd;
+            border-radius: 6px;
+            font-size: 0.88rem;
+        }
+
+        .tipo{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .boton1 {
+            width: 100%;
+            padding: 10px;
+            color: black;
+            border: none;
+            border-radius: 7px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+
+        .lista {
+            flex: 1;
+      }
+
+        .barra {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid #eee;
+       }
+
+        .barra span {
+            font-size: 0.9rem;
+            color: var(--gris-medio);
+        }
+
+        .barra select {
+            padding: 7px 12px;
+            border: 1.5px solid #ddd;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.88rem;
+         
+        }
+
+        
+        .resultado{
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+            margin-bottom: 18px;
+            display: flex;
+            overflow: hidden;
+           }
+
+        .resultado:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px 
+       }
+
+        .resultado .foto {
+            width: 140px;
+            flex-shrink: 0;
+            background-color:#9b30d9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+       }
+
+        .resultado .contenido {
+            padding: 18px 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .resultado .cabecera {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .resultado h3 {
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+       }
+
+        .resultado .ubicacion {
+            font-size: 0.85rem;
+        }
+
+        .resultado .precio {
+            background: #f0e6ff;
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding: 6px 14px;
+            border-radius: 20px;
+
+        }
+
+	.resultado .botonprimario {
+	    font-size:0.85rem;
+	    padding:8px 16px;
+}
+
+	.resultado .estrellas {
+	    font-size:0.8rem;
+	    color:#888;
+}
+        .resultado .descripcion {
+            font-size: 0.88rem;
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+
+        .resultado .pie {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .etiquetas {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .etiqueta {
+            background: #f4f4f4;
+            border-radius: 4px;
+            padding: 3px 10px;
+            font-size: 0.78rem;
+          }
+
+   

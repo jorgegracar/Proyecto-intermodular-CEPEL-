@@ -1,0 +1,72 @@
+CREATE DATABASE cepel //La creamos y nos metemos en ella, vamos a la sección SQL y empezamos a crear las tablas:
+
+
+
+CREATE TABLE usuario (
+    id_usuario INT,
+    nombre_completo VARCHAR(100),
+    email VARCHAR(150),
+    pasword_hash VARCHAR (255),
+    telefono VARCHAR(20),
+    fecha_registro 	DATETIME,
+    CONSTRAINT pk_usuario PRIMARY KEY (id_usuario)
+    );
+
+
+CREATE TABLE centro_estetica (
+    id_centro          INT,   
+    nombre_comercial   VARCHAR(150), 
+    cif                VARCHAR(20),   
+    direccion_fisica   VARCHAR(255),  
+    geolocalizacion    VARCHAR(100),
+    telefono_contacto  VARCHAR(20),
+    horario_apertura   VARCHAR(255),               
+    descripcion        TEXT,
+    fecha_alta         DATETIME,
+    CONSTRAINT pk_centro PRIMARY KEY (id_centro)
+);
+
+CREATE TABLE servicio (
+    id_servicio INT,
+    id_centro INT,
+    nombre VARCHAR(150),
+    descripcion_corta VARCHAR(255),
+    precio_euro DECIMAL(6,2),
+    duracion_estimada_minutos INT,
+    CONSTRAINT pk_servicio PRIMARY KEY (id_servicio),
+    CONSTRAINT fk_servicio_centro
+        FOREIGN KEY (id_centro)
+        REFERENCES centro_estetica (id_centro)
+);
+
+CREATE TABLE cita (
+    id_cita     INT,
+    id_usuario  INT,
+    id_centro   INT,
+    id_servicio INT,
+    fecha_cita  DATE,
+    hora_inicio TIME,
+    estado ENUM(
+                    'Pendiente',
+                    'Confirmada',
+                    'Cancelada',
+                    'Finalizada'
+                )           NOT NULL DEFAULT 'Pendiente',
+    CONSTRAINT pk_cita PRIMARY KEY (id_cita),
+    CONSTRAINT fk_cita_usuario
+        FOREIGN KEY (id_usuario)
+        REFERENCES usuario (id_usuario)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    CONSTRAINT fk_cita_centro
+        FOREIGN KEY (id_centro)
+        REFERENCES centro_estetica (id_centro)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    CONSTRAINT fk_cita_servicio
+        FOREIGN KEY (id_servicio)
+        REFERENCES servicio (id_servicio)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
+

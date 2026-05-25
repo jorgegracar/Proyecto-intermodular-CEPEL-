@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse – CEPEL</title>
+    <link rel="stylesheet" href="css/stylelogin.css">
+</head>
+<body>
+
+  <header>
+        <div class="logo">CEPEL</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="resultados.html">Centros</a></li>
+                <li><a href="detalle.html" class="activo">Detalle</a></li>
+                <li><a href="login.html">Acceder</a></li>
+                <li><a href="login.html" class="btn-nav">Reservar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="pagina-auth">
+        <div class="caja-auth">
+
+            <div id="panel-registro" class="panel activo formulario-auth">
+                <h2>Crear cuenta</h2>
+                <p class="subtitulo">Regístrate para reservar en tus centros favoritos</p>
+
+                <div class="form-fila">
+                    <div class="form-grupo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="María">
+                    </div>
+                    <div class="form-grupo">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" id="apellidos" placeholder="García López">
+                    </div>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="email-reg">Correo electrónico</label>
+                    <input type="email" id="email-reg" placeholder="maria@email.com">
+                </div>
+
+                <div class="form-grupo">
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" id="tel" placeholder="6XX XXX XXX">
+                </div>
+
+                <div class="form-grupo">
+                    <label for="pass-reg">Contraseña</label>
+                    <input type="password" id="pass-reg" placeholder="Mínimo 8 caracteres">
+                    <div class="requisito">Mínimo 8 caracteres, una mayúscula y un número</div>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="pass-rep">Repetir contraseña</label>
+                    <input type="password" id="pass-rep" placeholder="Repite la contraseña">
+                </div>
+
+                <div class="form-grupo">
+                    <label style="display:flex; align-items:flex-start; gap:8px; font-weight:400; cursor:pointer;">
+                        <input type="checkbox" style="margin-top:3px;">
+                        <span style="font-size:0.85rem;">
+                            Acepto los <a href="#">términos y condiciones</a> y la
+                            <a href="#">política de privacidad</a>
+                        </span>
+                    </label>
+                </div>
+
+                <button class="btn btn-primario btn-full" onclick="window.location.href='panel-usuario.html'">
+                    Crear cuenta
+                </button>
+
+                <div class="registro-empresa">
+                    <p>¿Eres propietario/a de un negocio?</p>
+                    <a href="#" class="btn btn-secundario" style="font-size:0.85rem; padding:9px 20px;">
+                        🏪 Registrar mi centro
+                    </a>
+                </div>
+
+                <div class="enlace-pie">
+                    ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CEPEL – Plataforma Integrada para Centros de Estética y Peluquería Locales</p>
+        <p style="margin-top:6px;">Proyecto académico – Jorge Grao Cartagena | 1º DAW</p>
+    </footer>
+
+</body>
+</html>
